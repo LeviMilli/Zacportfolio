@@ -4183,3 +4183,7 @@ input, select, textarea {
 		background-color: #fff1e3;
 		background-image: none;
 	}
+
+	.shadow {
+		text-shadow: 10px 10px 10px black;
+	}
