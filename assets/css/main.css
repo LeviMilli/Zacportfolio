@@ -4187,3 +4187,11 @@ input, select, textarea {
 	.shadow {
 		text-shadow: 10px 10px 10px black;
 	}
+
+
+	.maintitle {
+		text-align: center;
+		font-size: 2em;
+		text-decoration: underline;
+
+	}
