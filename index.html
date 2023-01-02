@@ -212,6 +212,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				fetch("https://bright-crown-wasp.cyclic.app/api/info")
+					.then(res =>{
+						return res.json()
+					})
+					.then(data => {
+						console.log(data);
+					})
+					.catch(error => {
+						console.log(error)
+					})
+			</script>
+
 
 	</body>
 </html>
