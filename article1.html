@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Zac</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">ZacAdamsWrites</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Zac</a></li>
+							<!-- <li><a href="#">Youtube</a></li> -->
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+				<!-- Wrapper -->
+				<section id="one" class="wrapper spotlight style1">
+					<h1 id="classJs1" class="maintitle"></h1>
+					<div class="inner">
+
+						<!-- IMAGE ARTICLE ONE -->
+						<a href="#" class="image"><img id="img1" src="" alt="" /></a>
+						<div class="content">
+							<!-- CONTENT ARTICLE ONE -->
+							<h2 id="classJs1"  class="major"></h2>
+							<!-- PARAGRAPH ARTICLE ONE -->
+							<p id="article1">Loading...</p>
+							<!-- URL ARTICLE ONE -->
+							<!-- <a href="https://jamesclear.com/five-step-creative-process" id="special1" class="special">Continue reading</a> -->
+						</div>
+					</div>
+				</section>
+
+				<!-- Footer -->
+
+
+				<section id="footer">
+					<div id="shadowtext" class="inner">
+						<h2 class="major">Get in touch with me</h2>
+						<p>Feel free to reach out to me anytime if you have any questions or just want to chat. I'm always happy to help out and offer any assistance I can. You can contact me via email, on socials or through our messaging system. I look forward to hearing from you!</p>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								ZacAdamsWrites Inc<br />
+								Old town road<br />
+								Wheatland, WY
+							</li>
+							<!-- un comment out below for phone and email -->
+							<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
+							<!-- <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li> -->
+							<li class="icon brands fa-tiktok"><a href="https://www.tiktok.com/@zacadamswrites" target="_blank">https://www.tiktok.com/@zacadamswrites</a></li>
+							<li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UCwCtHGPldfB0GYvOKFJV3Kw" target="_blank">youtube/zacadamswrites</a></li>
+							<li class="icon brands fa-instagram"><a href="https://instagram.com/zacadamswrites" target="_blank">instagram.com/zacadamswrites</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; ZacAdamsWrites Inc. All rights reserved.</li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				fetch("https://bright-crown-wasp.cyclic.app/api/info")
+					.then(res =>{
+						return res.json()
+					})
+					.then(data => {
+						
+						let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
+						console.log(sorted)
+						document.getElementById("classJs1").innerText = sorted[0].title
+						document.getElementById("article1").innerText = sorted[0].fullArticle
+						document.getElementById("img1").src = sorted[0].url
+
+					})
+					.catch(error => {
+						console.log(error)
+					})
+			</script>
+
+	</body>
+</html>
