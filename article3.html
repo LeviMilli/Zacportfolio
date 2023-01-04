@@ -13,6 +13,24 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<script>
+			fetch("https://bright-crown-wasp.cyclic.app/api/info")
+				.then(res =>{
+					return res.json()
+				})
+				.then(data => {
+					
+					let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
+					console.log(sorted)
+					document.getElementById("classJs1").innerText = sorted[2].title
+					document.getElementById("article1").innerText = sorted[2].fullArticle
+					document.getElementById("img1").src = sorted[2].url
+
+				})
+				.catch(error => {
+					console.log(error)
+				})
+		</script>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -110,24 +128,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				fetch("https://bright-crown-wasp.cyclic.app/api/info")
-					.then(res =>{
-						return res.json()
-					})
-					.then(data => {
-						
-						let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
-						console.log(sorted)
-						document.getElementById("classJs1").innerText = sorted[2].title
-						document.getElementById("article1").innerText = sorted[2].fullArticle
-						document.getElementById("img1").src = sorted[2].url
 
-					})
-					.catch(error => {
-						console.log(error)
-					})
-			</script>
 
 	</body>
 </html>

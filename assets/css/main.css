@@ -4191,7 +4191,8 @@ input, select, textarea {
 
 	.maintitle {
 		text-align: center;
-		font-size: 2em;
-		text-decoration: underline;
+		font-size: 2.5em;
+		
+		font-family: 'Italiana', serif;
 
 	}

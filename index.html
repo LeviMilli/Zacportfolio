@@ -11,10 +11,37 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
 		<script src="https://kit.fontawesome.com/a170046978.js" crossorigin="anonymous"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<script>
+			fetch("https://bright-crown-wasp.cyclic.app/api/info")
+				.then(res =>{
+					return res.json()
+				})
+				.then(data => {
+					
+					let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
+					console.log(sorted)
+					document.getElementById("classJs1").innerText = sorted[0].title
+					document.getElementById("article1").innerText = sorted[0].article
+					document.getElementById("img1").src = sorted[0].url
+					document.getElementById("classJs2").innerText = sorted[1].title
+					document.getElementById("article2").innerText = sorted[1].article
+					document.getElementById("img2").src = sorted[1].url
+					document.getElementById("classJs3").innerText = sorted[2].title
+					document.getElementById("article3").innerText = sorted[2].article
+					document.getElementById("img3").src = sorted[2].url
+				})
+				.catch(error => {
+					console.log(error)
+				})
+		</script>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -60,11 +87,11 @@
 						<!-- ARTICLES HERE CHANGE THIS!!!!! -->
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
-								<h1 class="maintitle">My articles</h1>
+								<h1 class="maintitle">-My articles-</h1>
 								<div class="inner">
 
 									<!-- IMAGE ARTICLE ONE -->
-									<a href="/article1.html" class="image"><img id="img1" src="images/train.jpg" alt="" /></a>
+									<a href="/article1.html" class="image"><img id="img1" src="" alt="" /></a>
 									<div class="content">
 										<!-- CONTENT ARTICLE ONE -->
 										<h2 id="classJs1"  class="major"></h2>
@@ -80,7 +107,7 @@
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
 									<!-- IMAGE ARTICLE TWO -->
-									<a href="/article2.html" class="image"><img id="img2" src="images/page.jpg" alt="" /></a>
+									<a href="/article2.html" class="image"><img id="img2" src="" alt="" /></a>
 									<div class="content">
 										<!-- TITLE ARTICLE TWO -->
 										<h2 id="classJs2" class="major">Loading...</h2>
@@ -96,7 +123,7 @@
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
 									<!-- IMAGE ARTICLE THREE -->
-									<a href="/article3.html" class="image"><img id="img3" src="images/toaster.jpg" alt="" /></a>
+									<a href="/article3.html" class="image"><img id="img3" src="" alt="" /></a>
 									<div class="content">
 										<!-- TITLE ARTICLE THREE -->
 										<h2 id="classJs3" class="major">Loading...</h2>
@@ -212,7 +239,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
+			<!-- <script>
 				fetch("https://bright-crown-wasp.cyclic.app/api/info")
 					.then(res =>{
 						return res.json()
@@ -234,7 +261,7 @@
 					.catch(error => {
 						console.log(error)
 					})
-			</script>
+			</script> -->
 
 
 	</body>
