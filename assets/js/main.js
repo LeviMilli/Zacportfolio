@@ -4,14 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-import CMS from 'netlify-cms-app'
-// Initialize the CMS object
-CMS.init()
-// Now the registry is available via the CMS object.
-CMS.registerPreviewTemplate('my-template', MyTemplate)
-
-
-
 (function($) {
 
 	var	$window = $(window),
