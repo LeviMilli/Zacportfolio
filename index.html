@@ -6,7 +6,16 @@
 -->
 <html>
 	<head>
-		<title>ZacAdamsWrites</title>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0N4E52MBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0N4E52MBJ');
+</script>
+		<title>TheBusinessBlog</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -20,36 +29,14 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<script>
-			fetch("https://bright-crown-wasp.cyclic.app/api/info")
-				.then(res =>{
-					return res.json()
-				})
-				.then(data => {
-					
-					let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
-					console.log(sorted)
-					document.getElementById("classJs1").innerText = sorted[0].title
-					document.getElementById("article1").innerText = sorted[0].article
-					document.getElementById("img1").src = sorted[0].url
-					document.getElementById("classJs2").innerText = sorted[1].title
-					document.getElementById("article2").innerText = sorted[1].article
-					document.getElementById("img2").src = sorted[1].url
-					document.getElementById("classJs3").innerText = sorted[2].title
-					document.getElementById("article3").innerText = sorted[2].article
-					document.getElementById("img3").src = sorted[2].url
-				})
-				.catch(error => {
-					console.log(error)
-				})
-		</script>
+	
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">ZacAdamsWrites</a></h1>
+						<h1><a href="index.html">TheBusinessBlog</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -61,9 +48,9 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="#one">Articles</a></li>
+								<li><a href="#one">Blogs</a></li>
 								<li><a href="#four">Book Reccommendations</a></li>
-								<li><a href="/about.html">About Zac</a></li>
+								<li><a href="/about.html">About Levi</a></li>
 								<li><a href="#footer">Contact and Socials</a></li>
 								<!-- <li><a href="#">Youtube</a></li> -->
 							</ul>
@@ -76,7 +63,7 @@
 						<div class="inner">
 							
 							<div class="logo"><span class="icon" ><i class="fa-solid fa-book"></i></span></div>
-							<h2 class="shadow">Welcome to ZacAdamsWrites</h2>
+							<h2 class="shadow">Welcome to TheBusinessBlog</h2>
 							<p class="shadow">“If you're going to have a story, have a big story, or none at all.” ― Joseph Campbell</p>
 						</div>
 					</section>
@@ -88,16 +75,16 @@
 						<!-- ARTICLES HERE CHANGE THIS!!!!! -->
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
-								<h1 class="maintitle">-My articles-</h1>
+								<h1 class="maintitle">Blogs</h1>
 								<div class="inner">
 
 									<!-- IMAGE ARTICLE ONE -->
 									<a href="/article1.html" class="image"><img id="img1" src="https://24.media.tumblr.com/f678ce38eb896bc1d4aaa911958af087/tumblr_n2eccv6Dev1rgpzseo1_1280.gif" alt="" /></a>
 									<div class="content">
 										<!-- CONTENT ARTICLE ONE -->
-										<h2 id="classJs1"  class="major"></h2>
+										<h2 id="classJs1"  class="major">Blog 2</h2>
 										<!-- PARAGRAPH ARTICLE ONE -->
-										<p id="article1">Loading....</p>
+										<p id="article1">Blog 1 Incoming!</p>
 										<!-- URL ARTICLE ONE -->
 										<a href="/article1.html" id="special1" class="special">Continue reading</a>
 									</div>
@@ -111,9 +98,9 @@
 									<a href="/article2.html" class="image"><img id="img2" src="https://24.media.tumblr.com/f678ce38eb896bc1d4aaa911958af087/tumblr_n2eccv6Dev1rgpzseo1_1280.gif" alt="" /></a>
 									<div class="content">
 										<!-- TITLE ARTICLE TWO -->
-										<h2 id="classJs2" class="major">Loading...</h2>
+										<h2 id="classJs2" class="major">Blog 2</h2>
 										<!-- PARAGRAPH ARTICLE TWO -->
-										<p id="article2">Loading...</p>
+										<p id="article2">Blog 2 Incoming</p>
 										<!-- URL LINK ARTICLE TWO -->
 										<a href="/article2.html" class="special">Continue reading</a>
 									</div>
@@ -127,9 +114,9 @@
 									<a href="/article3.html" class="image"><img id="img3" src="https://24.media.tumblr.com/f678ce38eb896bc1d4aaa911958af087/tumblr_n2eccv6Dev1rgpzseo1_1280.gif" alt="" /></a>
 									<div class="content">
 										<!-- TITLE ARTICLE THREE -->
-										<h2 id="classJs3" class="major">Loading...</h2>
+										<h2 id="classJs3" class="major">Blog 3</h2>
 										<!-- PARAGRAPH ARTICLE THREE -->
-										<p id="article3">Loading...</p>
+										<p id="article3">Blog 3 incoming</p>
 										<!-- URL LINK ARTICLE THREE -->
 										<a href="/article3.html" class="special">Continue reading</a>
 									</div>
@@ -139,32 +126,29 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major colors">Book reccommendations</h2>
+									<h2 class="major colors">Best Blogs</h2>
 									<p class="colors">Clicking the book will take you to the amazon page for it. It also helps support my writing and reading so I can continue to bring you lists just like this one. Thank you in advance! I hope you enjoy them as much as I do!</p>
 									<section class="features">
 										<article>
-											<a href="https://www.amazon.com/Dear-Scott-Dearest-Zelda-Fitzgerald/dp/0747566011?keywords=dear+scott+dearest+zelda&qid=1656805387&sprefix=dear+scott%2Caps%2C134&sr=8-1&linkCode=li2&tag=zacadamswrite-20&linkId=76c28b75184480cf50dfd04bece60b7e&language=en_US&ref_=as_li_ss_il" class="image"><img src="images/dearscott1.jpg" alt="" /></a>
-											<h3 class="major">Dear Scott, Dearest Zelda : The Love Letters of F.Scott and Zelda Fitzgerald</h3>
-											<p>While F. Scot Fitzgerald should be on everyone’s reading list probably at least once a year, there are many misconceptions and rumors surrounding the relationship between him and his wife. While I’m sure that they had their problems, and those are well documented, this book is a look at the actual relationship betwen them. The fondness that they hold for each other, even while individually falling apart is a stark reminder why Fitzgerald though that “love, only love, could heal our brokenness.”</p>
-											<a href="https://www.amazon.com/Dear-Scott-Dearest-Zelda-Fitzgerald/dp/0747566011?keywords=dear+scott+dearest+zelda&qid=1656805387&sprefix=dear+scott%2Caps%2C134&sr=8-1&linkCode=li2&tag=zacadamswrite-20&linkId=76c28b75184480cf50dfd04bece60b7e&language=en_US&ref_=as_li_ss_il" class="special">Learn more</a>
+											<a href="" class="image"><img src="images/blog.jpg" alt="" /></a>
+											<h3 class="major">Blog 1</h3>
+											<p>Incoming</p>
+											<a href="" class="special">Learn more</a>
 										</article>
-										<article>
-											<a href="https://www.amazon.com/Oscar-Wilde-Complete-Collection/dp/1500337382?keywords=oscar+wilde&qid=1656808177&sprefix=oscar+wilde%2Caps%2C167&sr=8-7&linkCode=li2&tag=zacadamswrite-20&linkId=f4dcc8ac57ad57a4cafda9d976633de4&language=en_US&ref_=as_li_ss_il" class="image"><img src="images/oscar1.jpg" alt="" /></a>
-											<h3 class="major">Oscar Wilde, Complete Collection</h3>
-											<p>During Pride Month, I started to work through the works of Oscar Wilde. I couldn’t have been happier to really dive into this man’s work and soon bought the collected works. If you want to take your writing seriously in the modern world Oscar Wilde is a must read. From poetry to plays Oscar Wilde presents his cutting whit in a manner that so seemlessly blends with the story that reading the story because a part of knowing Mr. Wilde. A style that anyone could learn from.</p>
-											<a href="https://www.amazon.com/Oscar-Wilde-Complete-Collection/dp/1500337382?keywords=oscar+wilde&qid=1656808177&sprefix=oscar+wilde%2Caps%2C167&sr=8-7&linkCode=li2&tag=zacadamswrite-20&linkId=f4dcc8ac57ad57a4cafda9d976633de4&language=en_US&ref_=as_li_ss_il" class="special">Learn more</a>
+											<a href="" class="image"><img src="images/blog.jpg" alt="" /></a>
+											<h3 class="major">Blog 1</h3>
+											<p>Incoming</p>
+											<a href="" class="special">Learn more</a>
 										</article>
-										<article>
-											<a href="https://www.amazon.com/Every-Love-Story-Ghost-Wallace/dp/0147509726?crid=16FJDAS0ZX5TS&keywords=david+foster+wallace&qid=1656892860&sprefix=david+foster+wallace%2Caps%2C135&sr=8-18&linkCode=li2&tag=zacadamswrite-20&linkId=85b162c6af52db44e2f94c910877c530&language=en_US&ref_=as_li_ss_il" class="image"><img src="images/love1.jpg" alt="" /></a>
-											<h3 class="major">Every Love Story Is a Ghost Story: A Life of David Foster Wallace</h3>
-											<p>If you’ve never read the actual writings of David Foster Wallace his short essays and short stories are a much easier place to start than the massive TOMES of work that are his novels. If you have read anything from DFW then this is a great way to get a real look at the man behind the words. David often poured himself into his work and it felt like knowing him to read him but this is a wonderful inside perspect to a man who often cast a persona that felt much larger than life itself.</p>
-											<a href="https://www.amazon.com/Every-Love-Story-Ghost-Wallace/dp/0147509726?crid=16FJDAS0ZX5TS&keywords=david+foster+wallace&qid=1656892860&sprefix=david+foster+wallace%2Caps%2C135&sr=8-18&linkCode=li2&tag=zacadamswrite-20&linkId=85b162c6af52db44e2f94c910877c530&language=en_US&ref_=as_li_ss_il" class="special">Learn more</a>
+											<a href="" class="image"><img src="images/blog.jpg" alt="" /></a>
+											<h3 class="major">Blog 1</h3>
+											<p>Incoming</p>
+											<a href="" class="special">Learn more</a>
 										</article>
-										<article>
-											<a href="https://www.amazon.com/Chronicles-Narnia-Box-Set-Full-Color/dp/0064409392?_encoding=UTF8&qid=1656894703&sr=8-8&linkCode=li2&tag=zacadamswrite-20&linkId=cf046d7e155dd4172a850db5c1c3ef57&language=en_US&ref_=as_li_ss_il" class="image"><img src="images/narnia1.jpg" alt="" /></a>
-											<h3 class="major">The Chronicles of Narnia Box Set: Full-Color Collector's Edition</h3>
-											<p>C.S. Lewis is classic, very literally. In the fantasy space there are few stories as iconic as the Chronicals of Narnia. Portal fiction is something that fantasy will never get away from. When done right it can put a world of infinite possibilities just left of our reality. This is the magic of portal fiction. It could work that way, and there really isn’t much you can say to counter that. Beyond that the world of Narnia is a wonder that anyone who wants to write fiction can always learn from. The style, and prose is smooth and Lewis has a pithy dialog that comes across and punchy and immenent.</p>
-											<a href="https://www.amazon.com/Chronicles-Narnia-Box-Set-Full-Color/dp/0064409392?_encoding=UTF8&qid=1656894703&sr=8-8&linkCode=li2&tag=zacadamswrite-20&linkId=cf046d7e155dd4172a850db5c1c3ef57&language=en_US&ref_=as_li_ss_il" class="special">Learn more</a>
+											<a href="" class="image"><img src="images/blog.jpg" alt="" /></a>
+											<h3 class="major">Blog 1</h3>
+											<p>Incoming</p>
+											<a href="" class="special">Learn more</a>
 										</article>
 									</section>
 									<ul id="seven" class="actions">
@@ -192,7 +176,7 @@
 					<section id="footer">
 						<div id="shadowtext" class="inner">
 							<h2 class="major">Get in touch with me</h2>
-							<p>Feel free to reach out to me anytime if you have any questions or just want to chat. I'm always happy to help out and offer any assistance I can. You can contact me via email, on socials or through our messaging system. I look forward to hearing from you!</p>
+							<p>Leave your email to get current updates and notifications on blogs</p>
 							<form method="post" data-netlify="true">
 								<div class="fields">
 									<div class="field">
@@ -214,19 +198,19 @@
 							</form>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									ZacAdamsWrites Inc<br />
-									Old town road<br />
-									Wheatland, WY
+									TheBusinessBlog<br />
+									City<br />
+									Las Vegas, NV
 								</li>
 								<!-- un comment out below for phone and email -->
 								<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
 								<!-- <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li> -->
 								<li class="icon brands fa-tiktok"><a class="underline" href="https://www.tiktok.com/@zacadamswrites">https://www.tiktok.com/@zacadamswrites</a></li>
-								<li class="icon brands fa-youtube"><a class="underline" href="https://www.youtube.com/channel/UCwCtHGPldfB0GYvOKFJV3Kw">youtube/zacadamswrites</a></li>
-								<li class="icon brands fa-instagram"><a class="underline" href="https://instagram.com/zacadamswrites">instagram.com/zacadamswrites</a></li>
+								<li class="icon brands fa-youtube"><a class="underline" href="">youtube is incoming</a></li>
+								<li class="icon brands fa-instagram"><a class="underline" href="https://instagram.com/LeviMilli">instagram.com/levimilli</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; ZacAdamsWrites Inc. All rights reserved.</li>
+								<li>&copy; TheBusinessBlog Inc. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
