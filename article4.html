@@ -1,5 +1,88 @@
+
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0N4E52MBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0N4E52MBJ');
+</script>
+		<title>AWS's Customer Persona</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<script>
+			fetch("https://bright-crown-wasp.cyclic.app/api/info")
+				.then(res =>{
+					return res.json()
+				})
+				.then(data => {
+					
+					let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
+					console.log(sorted)
+					document.getElementById("classJs1").innerText = sorted[2].title
+					document.getElementById("article1").innerText = sorted[2].fullArticle
+					document.getElementById("img1").src = sorted[2].url
+
+				})
+				.catch(error => {
+					console.log(error)
+				})
+		</script>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">TheBusinessBlog</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Zac</a></li>
+							<!-- <li><a href="#">Youtube</a></li> -->
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+				<!-- Wrapper -->
+				<section id="one" class="wrapper spotlight style1">
+					<h1 id="classJs1" class="major">AI-Driven Digital Marketing Strategy for AWS</h1>
+					<div class="inner">
+
+						<!-- IMAGE ARTICLE ONE -->
+						<a href="#" class="image"><img id="img1" src="/images/AWS.jpg" alt="" /></a>
+						<div class="content">
+							<!-- CONTENT ARTICLE ONE -->
+							<h2 id="classJs1"  class="major"></h2>
+							<!-- PARAGRAPH ARTICLE ONE -->
+							 <p id="article1" style="font-weight: bold;">
+						
+							<h1 id="classJs1" class="major">Customer Persona – Information Needed</h1>
+							<p>
 <!-- IMAGE ARTICLE ONE -->
-<a href="#" class="image"><img id="img1" src="" alt="" /></a>
+<a href="#" class="image"><img id="img1" src="/images/Salesforce.jpg" alt="" /></a>
 
 <div class="content">
 
