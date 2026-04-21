@@ -1,0 +1,213 @@
+
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0N4E52MBJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0N4E52MBJ');
+</script>
+		<title>Google Analytics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<script>
+			fetch("https://bright-crown-wasp.cyclic.app/api/info")
+				.then(res =>{
+					return res.json()
+				})
+				.then(data => {
+					
+					let sorted = data.sort((a,b)=> (a.order > b.order ? 1 : -1));
+					console.log(sorted)
+					document.getElementById("classJs1").innerText = sorted[2].title
+					document.getElementById("article1").innerText = sorted[2].fullArticle
+					document.getElementById("img1").src = sorted[2].url
+
+				})
+				.catch(error => {
+					console.log(error)
+				})
+		</script>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">TheBusinessBlog</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Levi</a></li>
+							<!-- <li><a href="#">Youtube</a></li> -->
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+				<!-- Wrapper -->
+				<section id="one" class="wrapper spotlight style1">
+					<h1 id="classJs1" class="major">Google Anylytics</h1>
+					<div class="inner">
+
+						<!-- IMAGE ARTICLE ONE -->
+						<a href="#" class="image"><img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGLsi20TILcD-ARl6NfypovR2Y0Ii23XWyA&s" alt="" /></a>
+						<div class="content">
+							<!-- CONTENT ARTICLE ONE -->
+							<h2 id="classJs1"  class="major"></h2>
+							<!-- PARAGRAPH ARTICLE ONE -->
+	
+<!-- IMAGE ARTICLE ONE -->
+<a href="#" class="image"><img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGLsi20TILcD-ARl6NfypovR2Y0Ii23XWyA&s" alt="" /></a>
+
+<div class="content">
+
+	<!-- TITLE -->
+	<h2 id="classJs1" class="major">Google Analytics for website</h2>
+
+	
+
+	<h1 id="classJs1" class="major">Specific Anylytics</h1>
+
+	<p id="article1">
+        I used google anylytics to track core metrics. Monitering user acqusition, unique page views and demographic details helps you make important decisions like changing your channel, your creative and/ or your approach
+    </p>
+
+	<h1 id="classJs1" class="major">User acquisition -  First user source / medium</h1>
+
+    <p>
+        This area is very important because it shows where your most effect channel is and how you are getting traffic
+
+    </p>
+    <p>
+        Average engagement time helps shed light on whether your content is resonating with your audience or if you have a high bounce rate. New users help determine how well your hook on your media channels is doing. Engagement rate helps you understand how well your content is resonating with your audience. A high engagement rate indicates that users are finding your content valuable and are actively interacting with it, while a low engagement rate may suggest that your content is not capturing their interest effectively.
+    </p>
+    <img src= "images/aquisition first.JPG">>
+
+	<h1 id="classJs1" class="major">Engagement page title and screens</h1>
+
+	<p id="article1">
+	Page titles and screens shows what pages people are getting to and spending time on and what is the most important.<br/><br/>
+	</p>
+
+    <p>
+        average engagment time is importatnt because it shows where people end up spending the most amount of time. Views is what is your hook and why its good and new users shows how effective your hook is.
+    </p>
+
+<img src="images/pages and interests.JPG" >
+
+	<h1 id="classJs1" class="major">User attributes- Demographic details</h1>
+
+	<p id="article1">
+	county and city helps show what demographics you are reaching and helps show how you can reach them more. 
+
+	</p>
+
+    <p>
+        users is important because you want to know who is who. engagement rate is important for how long people are staying and are engaged for. Engaged session per user is important becuase it shows individual times and helps show weaknesses.
+    </p>
+
+    <img src="images/user attributes and emographics.JPG">
+
+	<h1 id="classJs1" class="major">Conclusion</h1>
+    <p>
+        Overall having tons of data is always a good thing. it shows weaknesses and strengths and helps you make informed decisions. Google analytics is a great tool to use to track your website and make sure you are on the right track. It is important to know where your traffic is coming from, how they are engaging with your content, and who your audience is in order to make informed decisions about your marketing strategy.
+    </p>
+
+	
+
+
+</div>
+
+</div>
+
+
+
+
+										
+							<!-- URL ARTICLE ONE -->
+							<!-- <a href="https://jamesclear.com/five-step-creative-process" id="special1" class="special">Continue reading</a> -->
+						</div>
+					</div>
+				</section>
+
+				<!-- Footer -->
+
+
+				<section id="footer">
+					<div id="shadowtext" class="inner">
+						<h2 class="major">Get Updates!
+						</h2>
+						<p>Leave your email to get current updates and notifications on blogs</p>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									TheBusinessBlog<br />
+									City<br />
+									Las Vegas, NV
+								</li>
+								<!-- un comment out below for phone and email -->
+								<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
+								<!-- <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li> -->
+								<li class="icon brands fa-tiktok"><a class="underline" href="https://www.tiktok.com/">Coming</a></li>
+								<li class="icon brands fa-youtube"><a class="underline" href="">youtube is incoming</a></li>
+								<li class="icon brands fa-instagram"><a class="underline" href="https://instagram.com/LeviMilli">instagram.com/levimilli</a></li>
+							</ul>
+						<ul class="copyright">
+							<li>&copy; TheBusinessBlog Inc. All rights reserved.</li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
+</html>
